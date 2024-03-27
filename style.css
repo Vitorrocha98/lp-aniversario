@@ -191,6 +191,7 @@ body {
 
                         img {
                             border: unset;
+                            filter: drop-shadow(2px 4px 6px #000);
                         }
 
                         .block-invite__invitation-details__wrapper-description {
@@ -202,6 +203,8 @@ body {
                             p {
                                 width: 100%;
                                 max-width: 192px;
+                                font-weight: 600;
+                                text-transform: uppercase;                                
                             }
                         }
                     }
