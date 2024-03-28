@@ -2,7 +2,7 @@ const inputText = document.querySelector('[type="text"]');
 const submitButton = document.querySelector('[type="submit"]');
 
 inputText.addEventListener("input", function() {    
-    if (inputText.value.length <= 3) {      
+    if (inputText.value.length < 3) {      
       submitButton.disabled = true;
     } else {      
       submitButton.disabled = false;      
@@ -15,7 +15,7 @@ function submitted(){
     inviteForm.addEventListener("submit", function(event) {
         event.preventDefault();
             
-        const inputValue = document.querySelector('[type="text"]').value;
+        const inputValue = document.querySelector('[type="text"]').value.trim();
         const titleDetails = document.querySelector('.block-invite__invitation-details__description h3');
         const blockStartInvitation = document.querySelector('.block-invite__start-invitation');
         const blockDetailsInvitation = document.querySelector('.block-invite__invitation-details');
